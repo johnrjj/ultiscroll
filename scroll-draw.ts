@@ -30,12 +30,9 @@ document.addEventListener('scroll', () => {
     scaleDownLetters(lettersContainer);
     return;
   } 
-
-
-
+  
   letters.forEach(l =>  (l.classList.contains('letter--fill')) ? toggleOutline(l) : null);
   lettersContainer.classList.contains('letters--scaled') ? null :  scaleUpLetters(lettersContainer);
-
   const offset: number = scrollPercent * (longestPath / 100);
   letters.forEach(l => l.style.strokeDashoffset = (longestPath - offset).toString());
 });
