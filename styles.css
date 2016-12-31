@@ -13,7 +13,7 @@ h1 {
   letter-spacing: .07em;
 }
 
-.frame {
+.scrollable {
   height: 3000px;
 }
 
@@ -43,8 +43,9 @@ svg {
   transition: transform 2.0s;
 }
 
-.letters--scaled {
+.letters--scaled-up {
   transform: scale(2.0);
+  transition: transform 1.0s;
 }
 
 .letter--outline {
@@ -58,8 +59,7 @@ svg {
 .letter--fill {
   transition: 
     stroke-width 0.5s linear,
-    fill 0.7s,
-    transform 2.0s;
+    fill 0.7s;
   fill: white;
   stroke-dasharray: "none";
   stroke-width: 0px;
